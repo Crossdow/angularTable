@@ -1,0 +1,8 @@
+<h1 mat-dialog-title class="title">Удаление строк</h1>
+<div mat-dialog-content>
+  <p>Удалить выбранные строки ({{data.amount - 1}})?</p>
+</div>
+<div mat-dialog-actions>
+  <button mat-button class="initium-cancel-button" [mat-dialog-close]="false">Отмена</button>
+  <button mat-flat-button class="initium-delete-button" [mat-dialog-close]="true">Удалить</button>
+</div>
