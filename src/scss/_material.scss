@@ -1,0 +1,14 @@
+@use 'material/checkbox.import' as checkbox;
+@use 'material/buttons.import' as buttons;
+@use 'material/inputs.import' as inputs;
+@use 'material/fill-input.import' as fill-input;
+@use 'material/dialog.import' as dialog;
+@use 'material/icon.import' as icon;
+
+@include checkbox.initium-styles;
+@include buttons.initium-styles;
+@include inputs.initium-styles;
+@include fill-input.initium-styles;
+@include dialog.initium-styles;
+@include icon.initium-styles;
+

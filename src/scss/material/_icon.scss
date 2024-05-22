@@ -1,0 +1,12 @@
+@mixin styles {
+
+  .mat-icon.initium-add-icon {
+    color: #304879;
+  }
+
+  .mat-icon.initium-delete-icon {
+    &:hover {
+      color: #304879;
+    }
+  }
+}

@@ -1,2 +1,17 @@
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, sans-serif; }
+@use "src/scss/material";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  padding: 0 16px 16px 16px;
+  background-color: #E9F3FF
+}

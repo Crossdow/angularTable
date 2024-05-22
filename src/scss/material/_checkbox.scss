@@ -1,0 +1,30 @@
+@mixin styles {
+  //background
+  .mdc-checkbox__background {
+    border-color: #DADADA !important;
+  }
+
+  //checked background
+  .mat-mdc-checkbox-checked .mdc-checkbox__background {
+    background-color: #4A95F7 !important;
+    border-color: #4A95F7 !important;
+  }
+
+  .mdc-checkbox .mdc-checkbox__native-control {
+    //ripple
+    &:focus:checked ~ .mdc-checkbox__ripple {
+      background-color: #4A95F7 !important;
+    }
+    //indeterminate background
+    &:enabled:indeterminate ~ .mdc-checkbox__background {
+      background-color: #4A95F7 !important;
+      border-color: #4A95F7 !important;
+    }
+
+    //checkmark color
+    &:enabled ~ .mdc-checkbox__background .mdc-checkbox__checkmark {
+      color: #DADADA;
+    }
+  }
+
+}

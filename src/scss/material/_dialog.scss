@@ -1,0 +1,20 @@
+@mixin styles {
+  .initium-dialog .mat-mdc-dialog-container {
+    .mdc-dialog__surface {
+      padding: 16px;
+      border-radius: 20px;
+    }
+    .mdc-dialog__content {
+      min-height: 95px;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 22px;
+      letter-spacing: 0.25px;
+      text-align: left;
+      color: #263238;
+    }
+    .mat-mdc-dialog-actions {
+      justify-content: flex-end;
+    }
+  }
+}
