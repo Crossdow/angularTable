@@ -1,4 +1,4 @@
-import {ChangeDetectionStrategy, Component, inject, OnInit} from '@angular/core';
+import {ChangeDetectionStrategy, Component, inject} from '@angular/core';
 import {CommonModule, NgOptimizedImage} from '@angular/common';
 import {ClientsTableComponent} from "../../blocks/clients-table/clients-table.component";
 import {MatIconModule} from "@angular/material/icon";
