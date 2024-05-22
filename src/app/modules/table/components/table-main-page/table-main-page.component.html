@@ -1,1 +1,23 @@
-<p>table-main-page works!</p>
+<div class="header">
+  <p class="header__title">
+    Клиенты
+  </p>
+</div>
+<div class="table-container">
+  <div class="table-toolbar">
+    <button class="action-btn" (click)="openAddModal()">
+      <mat-icon class="initium-add-icon">
+        <img src="assets/images/add-icon.svg" alt="">
+      </mat-icon>
+    </button>
+    <ng-container *ngIf="selectedUsers$ | async as selectedUsers">
+      <button class="action-btn" [disabled]="selectedUsers.length < 1" (click)="openDeleteModal()">
+        <mat-icon class="initium-delete-icon">
+          <img [src]="selectedUsers.length < 1 ? 'assets/images/disable-delete-icon.svg' : 'assets/images/delete-icon.svg'" alt="">
+        </mat-icon>
+      </button>
+    </ng-container>
+
+  </div>
+  <app-clients-table [dataSource]="users$ | async" (selected)="selectedUsers$.next($event)" (edit)="openAddModal($event)"></app-clients-table>
+</div>
