@@ -1,0 +1,25 @@
+.container {
+  padding: 60px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28.13px;
+  text-align: left;
+  color: #272727;
+  margin-bottom: 20px;
+}
+
+.buttons {
+  &__content {
+    display: flex;
+    gap: 30px;
+
+    &__firstColumn, &__secondColumn {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+    }
+  }
+}

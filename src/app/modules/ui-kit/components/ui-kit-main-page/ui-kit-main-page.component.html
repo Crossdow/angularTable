@@ -1,1 +1,43 @@
-<p>ui-kit-main-page works!</p>
+<div class="container">
+  <div class="buttons">
+    <p class="title buttons__title">Buttons</p>
+    <div class="buttons__content">
+      <div class="button__content__firstColumn">
+        <div class="button__content__firstColumn__default-btn">
+          <button mat-flat-button class="initium-delete-button">Удалить</button>
+          <button mat-flat-button class="initium-delete-button" style="margin-left: 10px" disabled>Удалить</button>
+        </div>
+      </div>
+      <div class="button__content__secondColumn">
+        <button mat-button class="initium-cancel-button">Отмена</button>
+        <button mat-button class="initium-cancel-button" style="margin-left: 10px" disabled>Отмена</button>
+      </div>
+    </div>
+  </div>
+  <div class="inputs">
+    <p class="title inputs__title">Inputs</p>
+    <div class="inputs__content">
+      <mat-form-field class="initium-fill-text-form-field">
+        <mat-label>E-mail</mat-label>
+        <input matInput class="initium-input" type="text">
+      </mat-form-field>
+    </div>
+  </div>
+  <div class="icons">
+    <p class="title icons__title">Icons</p>
+    <div class="icons__content">
+      <div class="icons__content__firstColumn">
+        <mat-icon class="initium-add-icon"><img ngSrc="assets/images/add-icon.svg" height="36" width="36" alt=""></mat-icon>
+      </div>
+      <div class="icons__content__secondColumn">
+        <mat-icon class="initium-delete-icon"><img ngSrc="assets/images/delete-icon.svg" height="36" width="36" alt=""></mat-icon>
+      </div>
+    </div>
+  </div>
+  <div class="checkboxes">
+    <p class="title checkboxes__title">Checkboxes</p>
+    <div class="checkboxes__content">
+      <mat-checkbox></mat-checkbox>
+    </div>
+  </div>
+</div>
