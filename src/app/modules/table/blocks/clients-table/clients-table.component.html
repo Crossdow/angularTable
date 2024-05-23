@@ -6,6 +6,7 @@
         <mat-checkbox (change)="$event ? masterToggle() : null; selected.emit(selection.selected)"
                       [checked]="selection.hasValue() && isAllSelected()"
                       [indeterminate]="selection.hasValue() && !isAllSelected()"
+                      (click)="$event.stopPropagation()"
         > <p class="name-title">Имя</p></mat-checkbox>
       </th>
       <td mat-cell *matCellDef="let element">
